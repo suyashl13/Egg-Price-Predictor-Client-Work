@@ -18,5 +18,4 @@ years = ['16', '17', '18', '19', '20', '21', '22']
 
 if __name__ == '__main__':
     reshape_bot = ReshapeBot(months=months, years=years)
-    # reshape_bot.create_csv_files()
     reshape_bot.work()

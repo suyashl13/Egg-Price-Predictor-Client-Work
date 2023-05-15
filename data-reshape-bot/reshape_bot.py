@@ -55,11 +55,6 @@ class ReshapeBot:
             'Muzaffurpur (CC)',
         ]
 
-    def create_csv_files(self):
-        for location in self.locations:
-            cf = open('BOT_OUTPUT_DATA/' + location + '.csv', 'w+')
-            cf.close()
-
     def work(self):
         for year in self.years:
             for month in self.months.keys():
