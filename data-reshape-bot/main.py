@@ -1,16 +1,22 @@
-# This is a sample Python script.
+from reshape_bot import ReshapeBot
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+months = {
+    'JAN': 31,
+    'FEB': 28,
+    'MAR': 31,
+    'APR': 30,
+    'MAY': 31,
+    'JUN': 30,
+    'JUL': 31,
+    'AUG': 31,
+    'SEP': 30,
+    'OCT': 31,
+    'NOV': 30,
+    'DEC': 31
+}
+years = ['16', '17', '18', '19', '20', '21', '22']
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    reshape_bot = ReshapeBot(months=months, years=years)
+    # reshape_bot.create_csv_files()
+    reshape_bot.work()
